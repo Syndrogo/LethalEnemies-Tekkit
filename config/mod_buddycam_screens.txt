@@ -1,0 +1,40 @@
+############
+# Settings #
+############
+global.configVersion: 4;
+global.tellTmpl: %u whispers to you: %c;
+global.tellTmpl: [%u -> me] %c;
+global.tellTmpl: From %u: %c;
+#global.autoAccept: Player1;
+#global.autoAccept: Player2;
+
+############
+# Screen 1 #
+############
+screen.new: true;
+screen.debug: true;
+
+############
+# Defaults #
+############
+# screen.new: false; indicates Config-Demo-Part.
+screen.new: false;
+screen.enable: true;
+screen.visible: true;
+screen.posXProcent: 0.68;
+screen.posYProcent: 0.6;
+screen.widthProcent: 0.3;
+screen.heightProcent: 0.3;
+# renderQuality 1-3, 1=best, 3=worst
+screen.renderQuality: 1;
+# Minecraft-Name of the Player whose screen you wan't to see:
+screen.playerName: Player;
+# Player-Nickname for Alias with EssentialsChat
+screen.playerNick: -;
+screen.autoGetPlayerNick: false;
+screen.enableKey: true;
+screen.drawEvenInGUI: false;
+screen.drawGUIaSecondTime: false;
+screen.drawHUDaSecondTime: false;
+# shows your own view
+screen.debug: false;

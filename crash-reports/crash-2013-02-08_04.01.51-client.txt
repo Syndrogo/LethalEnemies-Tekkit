@@ -1,0 +1,150 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 2/8/13 4:01 AM
+Description: Rendering screen
+
+java.lang.NoSuchMethodError: codechicken.core.ClientUtils.getRenderFrame()F
+	at codechicken.wirelessredstone.redpower.RenderRPWireless.renderInvReceiver(RenderRPWireless.java:429)
+	at codechicken.wirelessredstone.redpower.RenderRPWireless.renderInvBlock(RenderRPWireless.java:403)
+	at com.eloraam.redpower.core.CoreProxyClient$RenderHandler.renderInventoryBlock(CoreProxyClient.java:42)
+	at cpw.mods.fml.client.registry.RenderingRegistry.renderInventoryBlock(RenderingRegistry.java:149)
+	at FMLRenderAccessLibrary.renderInventoryBlock(FMLRenderAccessLibrary.java:91)
+	at bbb.a(RenderBlocks.java:7073)
+	at bce.a(RenderItem.java:341)
+	at bce.b(RenderItem.java:405)
+	at codechicken.nei.forge.GuiContainerManager.drawItem(GuiContainerManager.java:369)
+	at codechicken.nei.forge.GuiContainerManager.drawItem(GuiContainerManager.java:360)
+	at codechicken.nei.ItemPanelStack.draw(ItemPanelStack.java:21)
+	at codechicken.nei.ItemPanel.draw(ItemPanel.java:75)
+	at codechicken.nei.LayoutManager.renderObjects(LayoutManager.java:221)
+	at codechicken.nei.forge.GuiContainerManager.renderObjects(GuiContainerManager.java:514)
+	at avf.a(GuiContainer.java:146)
+	at avv.a(SourceFile:31)
+	at avz.a(SourceFile:48)
+	at ban.b(EntityRenderer.java:1004)
+	at net.minecraft.client.Minecraft.J(Minecraft.java:882)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:771)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at codechicken.wirelessredstone.redpower.RenderRPWireless.renderInvReceiver(RenderRPWireless.java:429)
+	at codechicken.wirelessredstone.redpower.RenderRPWireless.renderInvBlock(RenderRPWireless.java:403)
+	at com.eloraam.redpower.core.CoreProxyClient$RenderHandler.renderInventoryBlock(CoreProxyClient.java:42)
+	at cpw.mods.fml.client.registry.RenderingRegistry.renderInventoryBlock(RenderingRegistry.java:149)
+	at FMLRenderAccessLibrary.renderInventoryBlock(FMLRenderAccessLibrary.java:91)
+	at bbb.a(RenderBlocks.java:7073)
+	at bce.a(RenderItem.java:341)
+	at bce.b(RenderItem.java:405)
+	at codechicken.nei.forge.GuiContainerManager.drawItem(GuiContainerManager.java:369)
+	at codechicken.nei.forge.GuiContainerManager.drawItem(GuiContainerManager.java:360)
+	at codechicken.nei.ItemPanelStack.draw(ItemPanelStack.java:21)
+	at codechicken.nei.ItemPanel.draw(ItemPanel.java:75)
+	at codechicken.nei.LayoutManager.renderObjects(LayoutManager.java:221)
+	at codechicken.nei.forge.GuiContainerManager.renderObjects(GuiContainerManager.java:514)
+	at avf.a(GuiContainer.java:146)
+	at avv.a(SourceFile:31)
+	at avz.a(SourceFile:48)
+
+-- Screen render details --
+Details:
+	Screen name: avz
+	Mouse location: Scaled: (213, 119). Absolute: (427, 240)
+	Screen size: Scaled: (427, 240). Absolute: (854, 480). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [ays['spoonman184'/373, l='MpServer', x=210.21, y=65.62, z=141.30]]
+	Chunk stats: MultiplayerChunkCache: 441
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (200,64,144), Chunk: (at 8,4,0 in 12,9; contains blocks 192,0,144 to 207,255,159), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 279 game time, 279 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 144 total; [ays['spoonman184'/373, l='MpServer', x=210.21, y=65.62, z=141.30], pe['Sheep'/9, l='MpServer', x=138.16, y=63.00, z=68.19], pe['Sheep'/21, l='MpServer', x=184.50, y=70.00, z=87.50], pe['Sheep'/23, l='MpServer', x=187.50, y=70.00, z=84.50], pe['Sheep'/22, l='MpServer', x=187.50, y=70.00, z=82.50], pw['Falling Block'/3277, l='MpServer', x=349.50, y=4.50, z=246.50], pd['Pig'/25, l='MpServer', x=185.19, y=64.00, z=199.06], pw['Falling Block'/3276, l='MpServer', x=348.50, y=4.50, z=246.50], pe['Sheep'/24, l='MpServer', x=190.50, y=75.00, z=87.50], pw['Falling Block'/3279, l='MpServer', x=349.50, y=3.50, z=247.50], pd['Pig'/27, l='MpServer', x=176.97, y=65.00, z=192.06], pd['Pig'/26, l='MpServer', x=189.75, y=64.00, z=201.06], pw['Falling Block'/3273, l='MpServer', x=348.50, y=4.50, z=245.50], pw['Falling Block'/3272, l='MpServer', x=348.50, y=4.50, z=244.50], pd['Pig'/28, l='MpServer', x=190.53, y=64.00, z=202.34], pw['Falling Block'/3274, l='MpServer', x=349.50, y=4.50, z=245.50], pd['Pig'/34, l='MpServer', x=201.38, y=64.00, z=174.66], pd['Pig'/35, l='MpServer', x=202.59, y=64.00, z=174.58], pd['Pig'/33, l='MpServer', x=211.95, y=63.00, z=179.53], pd['Pig'/38, l='MpServer', x=202.45, y=64.00, z=191.50], pd['Pig'/39, l='MpServer', x=199.94, y=66.00, z=183.06], pd['Pig'/36, l='MpServer', x=202.83, y=63.29, z=173.29], pd['Pig'/37, l='MpServer', x=206.78, y=64.00, z=188.50], pe['Sheep'/42, l='MpServer', x=231.97, y=68.00, z=71.50], pe['Sheep'/43, l='MpServer', x=231.59, y=68.00, z=69.56], pd['Pig'/40, l='MpServer', x=204.43, y=64.00, z=191.50], pe['Sheep'/41, l='MpServer', x=231.94, y=68.00, z=66.97], pe['Sheep'/46, l='MpServer', x=220.65, y=68.00, z=91.24], pe['Sheep'/47, l='MpServer', x=225.25, y=67.00, z=88.18], pe['Sheep'/44, l='MpServer', x=228.47, y=68.00, z=68.84], pe['Sheep'/45, l='MpServer', x=229.06, y=67.00, z=83.13], pe['Sheep'/48, l='MpServer', x=221.87, y=68.00, z=90.57], pd['Pig'/55, l='MpServer', x=244.78, y=63.00, z=200.50], pd['Pig'/54, l='MpServer', x=246.09, y=63.00, z=200.50], pd['Pig'/53, l='MpServer', x=247.53, y=63.00, z=200.50], pd['Pig'/56, l='MpServer', x=243.50, y=63.00, z=203.50], pe['Sheep'/68, l='MpServer', x=269.50, y=70.00, z=149.76], pw['Falling Block'/3217, l='MpServer', x=345.50, y=24.68, z=134.50], pw['Falling Block'/3218, l='MpServer', x=345.50, y=24.68, z=135.50], pw['Falling Block'/3220, l='MpServer', x=346.50, y=24.68, z=135.50], pe['Sheep'/65, l='MpServer', x=278.53, y=70.00, z=146.50], pe['Sheep'/66, l='MpServer', x=279.53, y=69.00, z=149.78], pe['Sheep'/67, l='MpServer', x=277.47, y=70.00, z=146.50], pw['Falling Block'/3226, l='MpServer', x=348.50, y=50.68, z=138.50], pw['Falling Block'/3227, l='MpServer', x=349.50, y=50.68, z=138.50], pw['Falling Block'/3228, l='MpServer', x=348.50, y=50.68, z=139.50], pw['Falling Block'/3229, l='MpServer', x=350.50, y=51.68, z=138.50], pw['Falling Block'/3230, l='MpServer', x=351.50, y=50.68, z=138.50], pw['Falling Block'/3231, l='MpServer', x=351.50, y=51.68, z=139.50], pw['Falling Block'/3201, l='MpServer', x=351.50, y=49.61, z=105.50], ow['Bat'/1599, l='MpServer', x=218.75, y=41.12, z=71.29], pw['Falling Block'/3200, l='MpServer', x=353.50, y=49.61, z=105.50], ow['Bat'/1598, l='MpServer', x=202.25, y=35.52, z=65.25], pw['Falling Block'/3203, l='MpServer', x=350.50, y=49.61, z=105.50], pw['Falling Block'/3204, l='MpServer', x=349.50, y=48.61, z=105.50], pw['Falling Block'/3207, l='MpServer', x=346.50, y=35.16, z=113.50], pw['Falling Block'/3206, l='MpServer', x=346.50, y=35.16, z=112.50], pw['Falling Block'/3209, l='MpServer', x=353.50, y=17.16, z=125.50], pw['Falling Block'/3208, l='MpServer', x=345.50, y=36.16, z=112.50], pw['Falling Block'/3211, l='MpServer', x=350.50, y=18.16, z=127.50], pw['Falling Block'/3210, l='MpServer', x=350.50, y=18.16, z=126.50], pw['Falling Block'/3213, l='MpServer', x=352.50, y=50.16, z=128.50], pw['Falling Block'/3212, l='MpServer', x=350.50, y=18.16, z=128.50], pw['Falling Block'/3215, l='MpServer', x=353.50, y=50.68, z=128.50], qc['Creeper'/1585, l='MpServer', x=257.50, y=24.00, z=160.50], pw['Falling Block'/3214, l='MpServer', x=353.50, y=50.68, z=127.50], pw['Falling Block'/3250, l='MpServer', x=346.50, y=19.68, z=161.50], pw['Falling Block'/3251, l='MpServer', x=346.50, y=19.68, z=162.50], pw['Falling Block'/3248, l='MpServer', x=345.50, y=19.68, z=162.50], pw['Falling Block'/3254, l='MpServer', x=345.50, y=19.68, z=161.50], pw['Falling Block'/3253, l='MpServer', x=346.50, y=20.68, z=160.50], pw['Falling Block'/3235, l='MpServer', x=352.50, y=50.68, z=140.50], pw['Falling Block'/3234, l='MpServer', x=351.50, y=50.68, z=141.50], pw['Falling Block'/3233, l='MpServer', x=353.50, y=50.68, z=132.50], pw['Falling Block'/3232, l='MpServer', x=352.50, y=50.68, z=139.50], pw['Falling Block'/3239, l='MpServer', x=347.50, y=50.68, z=144.50], pw['Falling Block'/3238, l='MpServer', x=347.50, y=50.68, z=143.50], pw['Falling Block'/3237, l='MpServer', x=347.50, y=50.68, z=142.50], pw['Falling Block'/3236, l='MpServer', x=347.50, y=50.68, z=141.50], pw['Falling Block'/3243, l='MpServer', x=348.50, y=50.68, z=144.50], pw['Falling Block'/3242, l='MpServer', x=348.50, y=50.68, z=143.50], pw['Falling Block'/3241, l='MpServer', x=348.50, y=50.68, z=142.50], pw['Falling Block'/3240, l='MpServer', x=348.50, y=50.68, z=141.50], pw['Falling Block'/3245, l='MpServer', x=349.50, y=50.68, z=143.50], pw['Falling Block'/3244, l='MpServer', x=349.50, y=50.68, z=142.50], pw['Falling Block'/3165, l='MpServer', x=349.50, y=48.61, z=80.50], pw['Falling Block'/3164, l='MpServer', x=348.50, y=48.61, z=80.50], ow['Bat'/685, l='MpServer', x=168.50, y=26.48, z=222.35], pw['Falling Block'/3163, l='MpServer', x=347.50, y=48.61, z=80.50], qc['Creeper'/2052, l='MpServer', x=285.91, y=24.00, z=141.25], qc['Creeper'/2053, l='MpServer', x=284.69, y=24.00, z=141.30], qp['Spider'/2054, l='MpServer', x=285.57, y=24.00, z=142.50], pw['Falling Block'/3199, l='MpServer', x=352.50, y=49.61, z=105.50], pw['Falling Block'/3198, l='MpServer', x=351.50, y=49.61, z=104.50], pw['Falling Block'/3196, l='MpServer', x=352.50, y=49.61, z=104.50], qc['Creeper'/1736, l='MpServer', x=249.50, y=26.00, z=82.50], qc['Creeper'/640, l='MpServer', x=217.50, y=38.00, z=203.50], pw['Falling Block'/3176, l='MpServer', x=346.50, y=29.61, z=88.50], pw['Falling Block'/3177, l='MpServer', x=346.50, y=30.61, z=87.50], pw['Falling Block'/3174, l='MpServer', x=347.50, y=29.61, z=88.50], pw['Falling Block'/3175, l='MpServer', x=347.50, y=29.61, z=87.50], pw['Falling Block'/3172, l='MpServer', x=347.50, y=27.61, z=90.50], pw['Falling Block'/3173, l='MpServer', x=348.50, y=27.61, z=90.50], pw['Falling Block'/3170, l='MpServer', x=347.50, y=28.61, z=89.50], pw['Falling Block'/3169, l='MpServer', x=348.50, y=28.61, z=89.50], qn['Skeleton'/1701, l='MpServer', x=160.50, y=13.00, z=92.50], qn['Skeleton'/1700, l='MpServer', x=167.59, y=13.00, z=109.13], ow['Bat'/736, l='MpServer', x=198.68, y=29.38, z=217.50], qn['Skeleton'/741, l='MpServer', x=226.61, y=24.00, z=216.95], ow['Bat'/754, l='MpServer', x=202.11, y=30.78, z=221.44], ow['Bat'/752, l='MpServer', x=204.49, y=31.17, z=220.28], qn['Skeleton'/2120, l='MpServer', x=264.50, y=16.00, z=84.50], qp['Spider'/1207, l='MpServer', x=225.09, y=48.00, z=177.56], qc['Creeper'/1370, l='MpServer', x=261.50, y=16.00, z=164.50], qc['Creeper'/806, l='MpServer', x=149.50, y=35.00, z=87.02], qc['Creeper'/1893, l='MpServer', x=215.83, y=26.00, z=73.28], qc['Creeper'/769, l='MpServer', x=178.50, y=21.00, z=116.50], ow['Bat'/782, l='MpServer', x=212.84, y=22.31, z=221.78], pw['Falling Block'/3061, l='MpServer', x=318.50, y=17.49, z=285.50], pw['Falling Block'/3062, l='MpServer', x=317.50, y=17.49, z=287.50], qr['Zombie'/1333, l='MpServer', x=275.53, y=21.00, z=89.93], qr['Zombie'/1320, l='MpServer', x=217.50, y=23.00, z=215.50], ow['Bat'/843, l='MpServer', x=226.71, y=41.96, z=207.70], qc['Creeper'/1318, l='MpServer', x=256.50, y=14.00, z=95.07], qc['Creeper'/1319, l='MpServer', x=254.50, y=14.00, z=94.09], qc['Creeper'/2865, l='MpServer', x=272.50, y=17.00, z=147.50], qc['Creeper'/2864, l='MpServer', x=271.50, y=17.00, z=147.50], qc['Creeper'/1473, l='MpServer', x=222.50, y=11.00, z=193.50], ph['Squid'/440, l='MpServer', x=162.63, y=61.41, z=116.09], ph['Squid'/441, l='MpServer', x=164.88, y=61.00, z=110.09], ph['Squid'/442, l='MpServer', x=167.88, y=58.03, z=108.75], ph['Squid'/432, l='MpServer', x=236.97, y=56.00, z=178.75], ph['Squid'/433, l='MpServer', x=229.50, y=56.00, z=183.50], ph['Squid'/434, l='MpServer', x=233.84, y=57.38, z=171.78], ph['Squid'/439, l='MpServer', x=158.38, y=60.84, z=111.63], qr['Zombie'/1991, l='MpServer', x=222.50, y=36.00, z=114.50], qn['Skeleton'/1989, l='MpServer', x=218.88, y=37.00, z=111.53], ph['Squid'/431, l='MpServer', x=232.53, y=56.00, z=177.44], qn['Skeleton'/1992, l='MpServer', x=219.31, y=35.25, z=110.60], ph['Squid'/421, l='MpServer', x=145.56, y=62.38, z=99.59], ph['Squid'/420, l='MpServer', x=148.19, y=62.38, z=98.94], ph['Squid'/422, l='MpServer', x=150.38, y=58.25, z=91.13], ph['Squid'/476, l='MpServer', x=146.69, y=60.00, z=108.78], ow['Bat'/1001, l='MpServer', x=263.75, y=14.60, z=108.25]]
+	Retry entities: 0 total; []
+Stacktrace:
+	at ayp.a(WorldClient.java:440)
+	at net.minecraft.client.Minecraft.b(Minecraft.java:2401)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:787)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.4.7
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_13, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 331425696 bytes (316 MB) / 671547392 bytes (640 MB) up to 954466304 bytes (910 MB)
+	JVM Flags: 2 total; -Xms512m -Xmx1024m
+	AABB Pool Size: 10981 (614936 bytes; 0 MB) allocated, 5 (280 bytes; 0 MB) used
+	Suspicious classes: FML and Forge are installed
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v7.26 FML v4.7.4.520 Minecraft Forge 6.6.0.497 50 mods loaded, 50 mods active
+	mcp [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	FML [Forge Mod Loader] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Forge [Minecraft Forge] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	mod_CodeChickenCore [CodeChicken Core] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ImmibisCore_CoreMod [Immibis Core] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	mod_NotEnoughItems [Not Enough Items] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ImmibisCore [Immibis Core] (immibis-core-52.3.4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildCraft|Core [BuildCraft] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildCraft|Factory [BC Factory] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildCraft|Transport [BC Transport] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildCraft|Silicon [BC Silicon] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	APUnofficial [Additional Pipes] (AdditionalPipes2.1.3u42-BC3.4.2-MC1.4.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	IC2 [IndustrialCraft 2] (industrialcraft-2_1.115.207-lf.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	AdvancedRepulsionSystems [Advanced Repulsion Systems] (adv-repulsion-systems-52.0.5.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	AdvancedMachines [IC2 Advanced Machines Addon] (AdvancedMachines_1.4.6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	weaponmod [Balkon's WeaponMod] (Balkons-Weapon-Mod-1.4.6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildCraft|Builders [BC Builders] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildCraft|Energy [BC Energy] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	CompactSolars [Compact Solar Arrays] (compactsolars-universal-1.4.7-3.2.3.23.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ComputerCraft [ComputerCraft] (ComputerCraft1.481.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	CCTurtle [ComputerCraft Turtles] (ComputerCraft1.481.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DimensionalAnchors [Dimensional Anchors] (dimensional-anchor-52.1.6.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	EE3 [Equivalent Exchange 3] (Equivalent-Exchange-3-Mod-1.4.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	IC2NuclearControl [Nuclear Control] (IC2NuclearControl-1.4.6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	IronChest [Iron Chest] (ironchest-universal-1.4.7-5.0.0.228.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	PowerCrystalsCore [PowerCrystals Core] (PowerCrystalsCore_1.0.1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	MFReloaded [MineFactory Reloaded] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	MFReloaded|CompatExtraBiomes [MFR Compat: ExtraBiomes] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	MFReloaded|CompatForestry [MFR Compat: Forestry] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	MFReloaded|CompatIC2 [MFR Compat: IC2] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	MFReloaded|CompatPams [MFR Compat: Pam's Mods] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerCore [RedPower] (RedPowerCore-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerBase [RP Base] (RedPowerCore-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerWorld [RP World] (RedPowerMechanical-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	MFReloaded|CompatRP2 [MFR Compat: RP2] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	MFReloaded|CompatSoulShards [MFR Compat: SoulShards] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	MFReloaded|CompatThaumcraft [MFR Compat: Thaumcraft] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	NetherOres [Nether Ores] (NetherOres_2.0.4.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	PowerConverters [Power Converters] (PowerConverters_2.2.0.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerMachine [RP Machine] (RedPowerMechanical-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerCompat [RP Compat] (RedPowerCompat-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerWiring [RP Wiring] (RedPowerDigital-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerLogic [RP Logic] (RedPowerDigital-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerLighting [RP Lighting] (RedPowerDigital-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerControl [RP Control] (RedPowerMechanical-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	mod_ReiMinimap [mod_ReiMinimap] (Rei-Minimap-Mod-1.4.7.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Tubestuff [Tubestuff] (tubestuff-52.2.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	WR-CBE|Core [WR-CBE Core] (WR-CBE Core 1.3.2.4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	WR-CBE|Addons [WR-CBE Addons] (WR-CBE Addons 1.3.2.4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	WR-CBE|RedPower [WR-CBE RedPower] (WR-CBE RedPower 1.3.2.4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	LWJGL: 2.4.2
+	OpenGL: AMD Radeon HD 6800 Series GL version 4.2.11931 Compatibility Profile Context, ATI Technologies Inc.
+	Is Modded: Definitely; Client brand changed to 'forge,fml'
+	Type: Client (map_client.txt)
+	Texture Pack: Default
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 2307 (129192 bytes; 0 MB) allocated, 35 (1960 bytes; 0 MB) used

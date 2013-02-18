@@ -1,0 +1,122 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 2/10/13 7:40 PM
+Description: Failed to start game
+
+java.lang.IllegalArgumentException: Slot 4091 is already occupied by forestry.core.gadgets.BlockStainedGlass@1bb48fcc when adding ic2.advancedmachines.common.BlockAdvancedMachines@6b4ca849
+	at amq.<init>(Block.java:326)
+	at akb.<init>(BlockContainer.java:11)
+	at ic2.advancedmachines.common.BlockAdvancedMachines.<init>(BlockAdvancedMachines.java:32)
+	at ic2.advancedmachines.common.AdvancedMachines.load(AdvancedMachines.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:485)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventHandler.handleEvent(EventHandler.java:69)
+	at com.google.common.eventbus.SynchronizedEventHandler.handleEvent(SynchronizedEventHandler.java:45)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:317)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:300)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:268)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventHandler.handleEvent(EventHandler.java:69)
+	at com.google.common.eventbus.SynchronizedEventHandler.handleEvent(SynchronizedEventHandler.java:45)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:317)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:300)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:268)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:83)
+	at cpw.mods.fml.common.Loader.initializeMods(Loader.java:657)
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:207)
+	at net.minecraft.client.Minecraft.a(Minecraft.java:456)
+	at asq.a(SourceFile:56)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:744)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.4.7
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_13, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 192282400 bytes (183 MB) / 587005952 bytes (559 MB) up to 954466304 bytes (910 MB)
+	JVM Flags: 2 total; -Xms512m -Xmx1024m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: FML and Forge are installed
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v7.26 FML v4.7.4.520 Minecraft Forge 6.6.0.497 57 mods loaded, 57 mods active
+	mcp [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	FML [Forge Mod Loader] (coremods) Unloaded->Constructed->Pre-initialized->Initialized
+	Forge [Minecraft Forge] (coremods) Unloaded->Constructed->Pre-initialized->Initialized
+	mod_CodeChickenCore [CodeChicken Core] (coremods) Unloaded->Constructed->Pre-initialized->Initialized
+	ImmibisCore_CoreMod [Immibis Core] (coremods) Unloaded->Constructed->Pre-initialized->Initialized
+	mod_NotEnoughItems [Not Enough Items] (coremods) Unloaded->Constructed->Pre-initialized->Initialized
+	RubeAurora [Mr. Rube's Aurora Mod] (AuroraRubealis_v101_For_147.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ImmibisCore [Immibis Core] (immibis-core-52.3.4.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ComputerCraft [ComputerCraft] (ComputerCraft1.481.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	CCTurtle [ComputerCraft Turtles] (ComputerCraft1.481.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	RedPowerCore [RedPower] (RedPowerCore-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	RedPowerBase [RP Base] (RedPowerCore-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	RedPowerMachine [RP Machine] (RedPowerMechanical-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	RedPowerCompat [RP Compat] (RedPowerCompat-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	RedPowerWorld [RP World] (RedPowerMechanical-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Core [BuildCraft] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Energy [BC Energy] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Forestry [Forestry for Minecraft] (forestry-A-2.0.0.9.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	IC2 [IndustrialCraft 2] (industrialcraft-2_1.115.207-lf.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Thaumcraft [Thaumcraft] (Thaumcraft3.0.3.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	KBITC3EssenceAddon [ThaumCraft3 Essence Addons] ((v2.3.2) KBI TC3 Addon - Essentia Everything.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Factory [BC Factory] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Transport [BC Transport] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Silicon [BC Silicon] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	APUnofficial [Additional Pipes] (AdditionalPipes2.1.3u42-BC3.4.2-MC1.4.7.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	AdvancedRepulsionSystems [Advanced Repulsion Systems] (adv-repulsion-systems-52.0.5.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	mod_AdvancedHud [mod_AdvancedHud] (Advanced Hud 4.8.1 [1.4.6].zip) Unloaded->Constructed->Pre-initialized->Initialized
+	AdvancedMachines [IC2 Advanced Machines Addon] (AdvancedMachines_1.4.6.zip) Unloaded->Constructed->Pre-initialized->Errored
+	AppliedEnergistics [Applied Energistics] (appeng-rv5-c.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	weaponmod [Balkon's WeaponMod] (Balkons-Weapon-Mod-1.4.6.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Builders [BC Builders] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	CompactSolars [Compact Solar Arrays] (compactsolars-universal-1.4.7-3.2.3.23.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	DimensionalAnchors [Dimensional Anchors] (dimensional-anchor-52.1.6.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	EE3 [Equivalent Exchange 3] (ee3-universal-pre1f.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ForgeEssentialsClient [Forge Essentials Client Addon] (ForgeEssentials-client-1.4.7-1.1.1.251.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	GregsLighting [Greg's Lighting] (GregsLighting-1.7.1-mc1.4.6.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	RedPowerWiring [RP Wiring] (RedPowerDigital-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	RedPowerLogic [RP Logic] (RedPowerDigital-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	RedPowerLighting [RP Lighting] (RedPowerDigital-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	RedPowerControl [RP Control] (RedPowerMechanical-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	Tubestuff [Tubestuff] (tubestuff-52.2.0.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	GregTech_Addon [GregTech-Addon] (gregtechmod.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	IC2NuclearControl [Nuclear Control] (IC2NuclearControl-1.4.6.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	IronChest [Iron Chest] (ironchest-universal-1.4.7-5.0.0.228.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	PowerCrystalsCore [PowerCrystals Core] (PowerCrystalsCore_1.0.1.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	MFReloaded [MineFactory Reloaded] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	MFReloaded|CompatExtraBiomes [MFR Compat: ExtraBiomes] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	MFReloaded|CompatForestry [MFR Compat: Forestry] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	MFReloaded|CompatIC2 [MFR Compat: IC2] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	MFReloaded|CompatPams [MFR Compat: Pam's Mods] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	MFReloaded|CompatRP2 [MFR Compat: RP2] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	MFReloaded|CompatSoulShards [MFR Compat: SoulShards] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	MFReloaded|CompatThaumcraft [MFR Compat: Thaumcraft] (MineFactoryReloaded_2.1.1.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	NetherOres [Nether Ores] (NetherOres_2.0.4.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	PowerConverters [Power Converters] (PowerConverters_2.2.0.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	mod_ReiMinimap [mod_ReiMinimap] (Rei-Minimap-Mod-1.4.7.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	ThaumicBees [ThaumicBees] (thaumicbees-1.3.0d.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	LWJGL: 2.4.2
+	OpenGL: AMD Radeon HD 6800 Series GL version 4.2.11931 Compatibility Profile Context, ATI Technologies Inc.
+	Is Modded: Definitely; Client brand changed to 'forge,fml'
+	Type: Client (map_client.txt)
+	Texture Pack: Sphax PureBDCraft 128x MC14.zip
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: ~~ERROR~~ NullPointerException: null

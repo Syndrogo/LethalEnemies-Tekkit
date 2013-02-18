@@ -1,0 +1,72 @@
+music:0.0
+sound:0.19014084
+invertYMouse:false
+mouseSensitivity:0.5
+fov:0.5070422
+gamma:0.0
+viewDistance:0
+guiScale:3
+particles:0
+bobView:false
+anaglyph3d:false
+advancedOpengl:false
+fpsLimit:0
+difficulty:3
+fancyGraphics:true
+ao:true
+clouds:true
+skin:Sphax PureBDCraft 128x MC14.zip
+lastServer:
+lang:en_US
+chatVisibility:0
+chatColors:true
+chatLinks:true
+chatLinksPrompt:false
+chatOpacity:1.0
+serverTextures:true
+snooperEnabled:false
+fullscreen:true
+enableVsync:true
+hideServerAddress:false
+advancedItemTooltips:false
+pauseOnLostFocus:true
+showCape:true
+touchscreen:false
+overrideWidth:0
+overrideHeight:0
+heldItemTooltips:true
+key_key.attack:-100
+key_key.use:-99
+key_key.forward:17
+key_key.left:30
+key_key.back:31
+key_key.right:32
+key_key.jump:57
+key_key.sneak:42
+key_key.drop:16
+key_key.inventory:18
+key_key.chat:20
+key_key.playerlist:15
+key_key.pickItem:-98
+key_key.command:53
+key_Advanced HUD:35
+key_ALT Key:56
+key_Boost Key:29
+key_Mode Switch Key:50
+key_Side Inventory Key:46
+key_key.extra:46
+key_key.charge:47
+key_key.toggle:34
+key_key.release:19
+key_Toggle chunk loading boundries:64
+key_Yaw Left:36
+key_Yaw Right:38
+key_Pitch Up:23
+key_Pitch Down:37
+key_Power Up:21
+key_Power Down:35
+key_Dismount:50
+key_Ammo Type:24
+key_Fire Missile:49
+key_Show force-loaded chunks:67
+key_BC-Screen 1:22
